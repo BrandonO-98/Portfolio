@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import { ReactComponent as Burger } from 'assets/icons/menu.svg';
 import { Link, Media } from 'lib/Proptypes';
 import { ReactComponent as Cross } from 'assets/icons/menu-close.svg';
+import { ReactComponent as Developer } from 'assets/icons/web.svg';
 // 3 props {img, array of objs, }
 export default function Navbar({
   links, logo,
@@ -13,25 +14,25 @@ export default function Navbar({
 
   return (
     // should this be width of screen or full
-    <nav className="grid w-screen justify-items-center h-20 bg-black sticky top-0">
+    <nav className="grid w-screen justify-items-center h-20 bg-white sticky top-0 drop-shadow-lg">
       {/* navbar */}
       <div className="relative grid grid-cols-2 h-full w-full justify-items-center items-center lg:max-w-6xl">
         {/* navbar-container */}
         <div className="flex items-center h-full lg:mr-40">
           {/* logo-container */}
-          <a href="/">
-            <img
-              src={logo.url}
-              alt={logo.alt}
-              className="h-20 object-cover"
-            />
+          <a href="/" className="pl-2">
+            <Developer className="w-full h-8 fill-black" />
           </a>
-          <h1 className="text-white pl-4 font-bold">
-            <a href={links[0].url}>{logo.alt}</a>
+          <h1 className="text-black pl-4 font-bold drop-shadow-xl">
+            <a href={links[0].url} className="text-xl">{logo.brand}</a>
           </h1>
+          <h2 className="text-blue-500 relative top-1 left-2">
+            <span className="text-black">/ </span>
+            Web Developer
+          </h2>
         </div>
-        <ul className={click ? 'bg-black absolute h-96 w-full -left-0 top-20 grid grid-rows-4 ease-in duration-500 lg:mr-32 lg:grid-rows-none lg:grid-cols-4 lg:static lg:h-20'
-          : 'bg-black absolute h-96 w-full -left-full top-20 grid grid-rows-4 ease-in duration-500 lg:mr-32 lg:grid-rows-none lg:grid-cols-4 lg:static lg:h-full'}
+        <ul className={click ? 'bg-white absolute h-96 w-full -left-0 top-20 grid grid-rows-4 ease-in duration-500 lg:mr-32 lg:grid-rows-none lg:grid-cols-4 lg:static lg:h-20'
+          : 'bg-white absolute h-96 w-full -left-full top-20 grid grid-rows-4 ease-in duration-500 lg:mr-32 lg:grid-rows-none lg:grid-cols-4 lg:static lg:h-full'}
         >
           {links.map((link, index) => (
             <li
@@ -41,8 +42,9 @@ export default function Navbar({
             >
               <a
                 href={link.url}
-                className={index === (links.length - 1) ? 'grid w-80 h-10 bg-blue text-white items-center justify-items-center border-2 border-white rounded-3xl lg:w-full'
-                  : 'box-border grid text-white h-full items-center justify-items-center ease-in duration-100 hover:text-blue hover:border-b-4 hover:border-white lg:h-full'}
+                className={index === (links.length - 1)
+                  ? 'grid w-80 h-10 bg-white text-black items-center justify-items-center border-2 border-white rounded-3xl lg:w-full hover:text-white hover:font-bold hover:bg-blue-500 ease-in duration-300'
+                  : 'grid text-black h-full items-center justify-items-center ease-in duration-100 hover:text-blue hover:border-b-4 hover:border-blue-500 lg:h-full'}
               >
                 {link.label}
               </a>
@@ -51,10 +53,10 @@ export default function Navbar({
         </ul>
         <button
           type="button"
-          className="grid bg-black h-full w-15 lg:hidden items-center justify-center"
+          className="grid bg-white h-full w-15 lg:hidden items-center justify-center"
           onClick={handleClick}
         >
-          {click ? <Cross className="w-full h-15 stroke-white" /> : <Burger className="w-full h-15 stroke-white" />}
+          {click ? <Cross className="w-full h-15 stroke-black" /> : <Burger className="w-full h-15 stroke-black" />}
         </button>
       </div>
     </nav>
@@ -87,6 +89,6 @@ Navbar.defaultProps = {
   ],
   logo: {
     url: 'https://flowbite.com/docs/images/logo.svg',
-    alt: 'Alt text for image',
+    brand: 'Brandon O. Shew',
   },
 };
