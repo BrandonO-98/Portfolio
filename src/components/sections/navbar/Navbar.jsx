@@ -14,7 +14,7 @@ export default function Navbar({
 
   return (
     // should this be width of screen or full
-    <nav className="grid w-screen justify-items-center h-20 bg-white sticky top-0 drop-shadow-lg">
+    <nav className="grid w-screen justify-items-center h-24 bg-white sticky top-0 drop-shadow-lg">
       {/* navbar */}
       <div className="relative grid grid-cols-2 h-full w-full justify-items-center items-center lg:max-w-6xl">
         {/* navbar-container */}
