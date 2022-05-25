@@ -5,7 +5,7 @@ import bodyshot from 'assets/images/bodyshot.jpg';
 export default function Hero() {
   return (
     <section className="grid h-[750px] w-screen justify-items-center items-center my-11">
-      <div className=" grid bg-img bg-cover w-11/12 h-full justify-items-center items-center shadow-2xl rounded-md">
+      <div className=" grid bg-code bg-cover w-11/12 h-full justify-items-center items-center shadow-2xl rounded-md">
         <div className="bg-white grid grid-cols-2 w-10/12 h-4/6 justify-items-center items-center rounded-2xl overflow-hidden lg:max-w-5xl">
           <div className="grid justify-items-center">
             <h2 className="h-4 text-green-500 mb-5 text-5xl font-bold">Welcome!</h2>

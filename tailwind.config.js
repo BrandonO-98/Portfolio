@@ -5,7 +5,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        img: "url('assets/images/code.jpg')",
+        code: "url('assets/images/code.jpg')",
+        water: "url('assets/images/water.jpg')",
       },
     },
   },

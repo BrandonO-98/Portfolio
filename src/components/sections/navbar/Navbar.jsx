@@ -31,8 +31,8 @@ export default function Navbar({
             Web Developer
           </h2>
         </div>
-        <ul className={click ? 'bg-white absolute h-96 w-full -left-0 top-20 grid grid-rows-4 ease-in duration-500 lg:mr-32 lg:grid-rows-none lg:grid-cols-4 lg:static lg:h-20'
-          : 'bg-white absolute h-96 w-full -left-full top-20 grid grid-rows-4 ease-in duration-500 lg:mr-32 lg:grid-rows-none lg:grid-cols-4 lg:static lg:h-full'}
+        <ul className={click ? 'bg-white absolute h-96 w-full -left-0 top-20 grid grid-rows-5 ease-in duration-500 lg:mr-32 lg:grid-rows-none lg:grid-cols-5 lg:static lg:h-20'
+          : 'bg-white absolute h-96 w-full -left-full top-20 grid grid-rows-5 ease-in duration-500 lg:mr-32 lg:grid-rows-none lg:grid-cols-5 lg:static lg:h-full'}
         >
           {links.map((link, index) => (
             <li
@@ -44,7 +44,7 @@ export default function Navbar({
                 href={link.url}
                 className={index === (links.length - 1)
                   ? 'grid w-80 h-10 bg-white text-black items-center justify-items-center border-2 border-white rounded-3xl lg:w-full hover:text-white hover:font-bold hover:bg-green-500 ease-in duration-300'
-                  : 'grid text-black h-full items-center justify-items-center ease-in duration-100 hover:text-green-400 hover:border-b-4 hover:border-green-500 lg:h-full'}
+                  : 'grid text-black h-full items-center justify-items-center ease-in duration-100 hover:text-green-400 hover:border-b-4 hover:border-green-500  hover:font-bold lg:h-full'}
               >
                 {link.label}
               </a>
@@ -85,6 +85,10 @@ Navbar.defaultProps = {
     {
       url: 'https://duckduckgo.com/',
       label: 'Projects',
+    },
+    {
+      url: 'https://duckduckgo.com/',
+      label: 'Contact',
     },
   ],
   logo: {
