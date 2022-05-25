@@ -8,18 +8,18 @@ export default function About() {
   return (
     <div className="grid h-screen w-screen items-center justify-items-center">
       <div className="grid w-10/12 my-12 h-[750px] bg-white shadow-lg lg:max-w-6xl">
-        <div className="grid items-center justify-items-center">
+        <div className="relative grid items-center justify-items-center">
           <h2 className="p-8 pb-0 text-lg font-bold justify-self-start ">About Me</h2>
           {/* <div className="grid items-center justify-items-center
           bg-water bg-cover w-10/12 h-full rounded-xl shadow-xl"></div> */}
           <img src={closeup} alt="closeup" className="h-80 w-80 rounded-full border-4 border-green-500" />
-          <div className="absolute w-24 h-24 top-[1100px] left-[335px] border-2 rounded-full border-green-400 shadow-2xl">
+          <div className="absolute w-24 h-24 top-[80px] left-[200px] border-2 rounded-full border-green-400 shadow-2xl">
             <Reactl className=" w-full h-full" />
           </div>
-          <div className="absolute w-32 h-32 top-[1325px] left-[335px] border-2 rounded-full border-green-400 shadow-2xl">
+          <div className="absolute w-32 h-32 top-[275px] left-[200px] border-2 rounded-full border-green-400 shadow-2xl">
             <Tailwind className=" w-full h-full" />
           </div>
-          <div className="absolute w-40 h-40 top-[1170px] right-[325px] border-2 rounded-full border-green-400 shadow-2xl">
+          <div className="absolute w-40 h-40 top-[175px] right-[150px] border-2 rounded-full border-green-400 shadow-2xl">
             <Python className=" w-full h-full " />
           </div>
 
