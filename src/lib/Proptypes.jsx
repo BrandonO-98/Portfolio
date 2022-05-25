@@ -6,7 +6,7 @@ export const Link = PropTypes.shape({
 });
 
 export const Media = PropTypes.shape({
-  alt: PropTypes.string.isRequired,
+  brand: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired,
 });
 
