@@ -1,10 +1,10 @@
 import React from 'react';
 // import closeup from 'assets/images/closeup.jpg';
-import bodyshot from 'assets/images/formal.jpg';
+import bodyshot from 'assets/images/bodyshot.jpg';
 
 export default function Hero() {
   return (
-    <section className="grid h-[750px] w-screen justify-self-center justify-items-center">
+    <section className="grid h-[750px] w-screen justify-self-center justify-items-center my-11">
       <div className="grid grid-cols-2 m-10 w-10/12 h-11/12 shadow-lg justify-items-center items-center lg:max-w-5xl">
         <div className="grid justify-items-center">
           <h2 className="h-4 text-blue-500 mb-5 text-5xl font-bold">Welcome!</h2>
