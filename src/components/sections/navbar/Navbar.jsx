@@ -14,7 +14,7 @@ export default function Navbar({
 
   return (
     // should this be width of screen or full
-    <nav className="grid w-screen justify-items-center h-24 bg-white sticky top-0 drop-shadow-lg">
+    <nav className="grid w-screen justify-items-center h-24 bg-white sticky top-0 drop-shadow-lg z-[1]">
       {/* navbar */}
       <div className="relative grid grid-cols-2 h-full w-full justify-items-center items-center lg:max-w-6xl">
         {/* navbar-container */}
@@ -26,7 +26,7 @@ export default function Navbar({
           <h1 className="text-black pl-4 font-bold drop-shadow-xl">
             <a href={links[0].url} className="text-xl">{logo.brand}</a>
           </h1>
-          <h2 className="text-blue-500 relative top-1 left-2">
+          <h2 className="text-green-600 relative top-1 left-2 font-bold">
             <span className="text-black">/ </span>
             Web Developer
           </h2>
@@ -43,8 +43,8 @@ export default function Navbar({
               <a
                 href={link.url}
                 className={index === (links.length - 1)
-                  ? 'grid w-80 h-10 bg-white text-black items-center justify-items-center border-2 border-white rounded-3xl lg:w-full hover:text-white hover:font-bold hover:bg-blue-500 ease-in duration-300'
-                  : 'grid text-black h-full items-center justify-items-center ease-in duration-100 hover:text-blue hover:border-b-4 hover:border-blue-500 lg:h-full'}
+                  ? 'grid w-80 h-10 bg-white text-black items-center justify-items-center border-2 border-white rounded-3xl lg:w-full hover:text-white hover:font-bold hover:bg-green-500 ease-in duration-300'
+                  : 'grid text-black h-full items-center justify-items-center ease-in duration-100 hover:text-green-400 hover:border-b-4 hover:border-green-500 lg:h-full'}
               >
                 {link.label}
               </a>
