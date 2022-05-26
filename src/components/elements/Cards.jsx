@@ -15,34 +15,38 @@ export default function Cards({ cardData }) {
 Cards.defaultProps = {
   cardData: [
     {
-      img: 'water.jpg',
+      vid: 'video1.mp4',
       header: 'Meme Generator',
       desc: `On button click a random image is displayed after a set is fetched on 
       page render. Meme top and bottom text are accessible by the user.`,
-      linkLabel: 'label',
+      tech: 'React, HTML/CSS',
+      linkLabel: 'Meme Generator App',
       linkPath: 'https://google.com',
     },
     {
-      img: 'water.jpg',
+      vid: 'video2.mp4',
       header: 'Tenzies Game',
       desc: `Clicking start begins the game. Dice are randomized periodically, freeze all at
       the same value to win.`,
-      linkLabel: 'label',
+      tech: 'React, HTML/CSS',
+      linkLabel: 'Tenzies App',
       linkPath: 'https://google.com',
     },
     {
-      img: 'water.jpg',
+      vid: 'video2.mp4',
       header: 'Notes',
       desc: 'This web app built in Es6 JS allows the user to create, update and delete notes.',
-      linkLabel: 'label',
+      linkLabel: 'Notes App',
+      tech: 'JS ES6, HTML/CSS',
       linkPath: 'https://google.com',
     },
     {
-      img: 'water.jpg',
+      vid: 'video1.mp4',
       header: 'Restaurant Guide',
       desc: `On map change, a set of restaurants are fetched from an API. Restaurant information 
       is displayed for the user. The map can be changed by dragging, or searching in form.`,
-      linkLabel: 'label',
+      tech: 'React, HTML, Tailwind CSS, Axios',
+      linkLabel: 'Restaurant Guide App',
       linkPath: 'https://google.com',
     },
   ],
@@ -50,9 +54,10 @@ Cards.defaultProps = {
 
 Cards.propTypes = {
   cardData: PropTypes.arrayOf({
-    img: PropTypes.string,
+    vid: PropTypes.string,
     header: PropTypes.string,
     desc: PropTypes.string,
+    tech: PropTypes.string,
     linkLabel: PropTypes.string,
     linkPath: PropTypes.string,
   }),
