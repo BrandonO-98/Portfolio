@@ -21,7 +21,7 @@ export default function Navbar({
         <div className="flex items-center h-full lg:mr-40">
           {/* logo-container */}
           <a href="/" className="pl-2">
-            <Developer className="w-full h-8 fill-black" />
+            <Developer className="w-8 h-8 fill-black" />
           </a>
           <h1 className="text-black pl-4 font-bold drop-shadow-xl">
             <a href={links[0].url} className="text-xl">{logo.brand}</a>

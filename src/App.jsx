@@ -6,6 +6,7 @@ import Projects from 'components/sections/projects/Projects';
 import Navbar from 'components/sections/navbar/Navbar';
 import Hero from 'components/sections/hero/Hero';
 import Contact from 'components/sections/contact/Contact';
+import Footer from 'components/sections/footer/Footer';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Timeline />
       <Projects />
       <Contact />
+      <Footer />
     </div>
   );
 }
