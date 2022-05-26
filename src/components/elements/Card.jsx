@@ -13,7 +13,7 @@ export default function Card({
       <img src={img} alt={linkLabel} className="h-40 w-full" />
       <h2 className="font-bold text-md px-4 pt-2 pb-0">{header}</h2>
       <p className="justify-self-center text-sm px-4">{desc}</p>
-      <a href={linkPath} alt="Link to Project" className="p-4 pb-0">{linkLabel}</a>
+      <a href={linkPath} alt="Link to Project" className="justify-self-center text-green-600">{linkLabel}</a>
     </div>
   );
 }
