@@ -28,7 +28,7 @@ export default function Hero() {
                 <a
                   href="/"
                   className="ease-in duration-300 border border-green-500 px-8 py-2 ml-2 rounded-full font-bold
-                  hover:border-none hover:text-white hover:bg-green-500"
+                   hover:text-white hover:bg-green-500"
                 >
                   Projects
                 </a>
@@ -40,7 +40,6 @@ export default function Hero() {
             <img src={bodyshot} alt="Close-up of Brandon" className="w-5/6 object-fit rounded-full border-4 border-green-500 mx-4" />
           </div>
         </div>
-
       </div>
     </section>
   );

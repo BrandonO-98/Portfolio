@@ -4,7 +4,8 @@ const timelineData = [
     title: 'Olympiads Teacher',
     location: 'Remote',
     desc: ['Organized and tailored Ontario High School Physics curriculum to meet the learning needs of individuals with varying skill levels.'],
-    buttonTxt: 'view',
+    buttonTxt: 'Olympiad\'s School',
+    buttonLink: 'https://olympiads.ca',
     date: 'February 2022 - May 2022',
     icon: 'work',
   },
@@ -15,7 +16,8 @@ const timelineData = [
     desc: ['Created appropriate lesson/tutorial plans and assessments to guide andgauge the learning of students enrolled in both first and second year physics.',
       `Provided constructive feedback for improvement on how to conduct and
       explain research observations in the undergraduate laboratory.`],
-    buttonTxt: 'view',
+    buttonTxt: '',
+    buttonLink: '',
     date: 'September 2019 - April 2022',
     icon: 'work',
   },
@@ -24,8 +26,9 @@ const timelineData = [
     title: 'Graduation - MSc ',
     location: 'University of Toronto',
     desc: ['Computational Physics (Computer Science applications in Physics)'],
-    buttonTxt: 'view',
-    date: 'November 2022',
+    buttonTxt: '',
+    buttonLink: '',
+    date: 'November 2021',
     icon: 'school',
   },
   {
@@ -36,8 +39,9 @@ const timelineData = [
     proteins in explicit solvents.`, `Scripted programs in Python and MATLAB to analyze large protein data
     sets containing information on conformational space, dynamics, and
     observables.`],
-    buttonTxt: 'view',
-    date: 'September 2019 - April 2022',
+    buttonTxt: 'Sarah Rauscher Lab',
+    buttonLink: 'https://rauscher-group.physics.utoronto.ca',
+    date: 'June 2020 - April 2021',
     icon: 'work',
   },
   {
@@ -45,7 +49,8 @@ const timelineData = [
     title: 'Graduation - HBSc ',
     location: 'University of Toronto',
     desc: ['Physics and Mathematics Specialization'],
-    buttonTxt: 'view',
+    buttonTxt: '',
+    buttonLink: '',
     date: 'April 2020',
     icon: 'school',
   },
@@ -55,7 +60,8 @@ const timelineData = [
     title: 'Physics Associate Intern',
     location: 'Credit Valley hospital',
     desc: ['Created databases in VBA to track the status of equipment used by medical physicists in the hospital setting.'],
-    buttonTxt: 'view',
+    buttonTxt: 'Credit Valley Hospital Website',
+    buttonLink: 'https://www.thp.ca/Pages/Home.aspx',
     date: 'September 2019 - April 2020',
     icon: 'work',
   },
@@ -66,7 +72,8 @@ const timelineData = [
     desc: [`Processed meteorological and hydrological data using Python via accessing a high-performance computing facility (e.g. UTM clusters).
     `, `Installed and ran hydrological models (e.g. Aquanty’s HGS, Environment
     Canada’s MESH model, Waterloo’s WATFLOOD).`],
-    buttonTxt: 'view',
+    buttonTxt: '',
+    buttonLink: '',
     date: 'September 2019 - April 2020',
     icon: 'school',
   },
@@ -77,7 +84,8 @@ const timelineData = [
     desc: [`Enhanced the UTM MATLAB built program for analyzing photo-bleaching data. Compared MATLAB and C++ algorithms of change-point detection, leading to publication.
     `, `Performed wet-lab experiments to compile data for photo-bleaching
     analysis.`],
-    buttonTxt: 'view',
+    buttonTxt: 'Publication',
+    buttonLink: 'https://pubmed.ncbi.nlm.nih.gov/31941327',
     date: 'May 2019 - September 2019',
     icon: 'school',
   },
