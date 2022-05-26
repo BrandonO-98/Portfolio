@@ -21,12 +21,12 @@ export default function Contact() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    emailjs.sendForm('service_k80978p', 'template_yid9bpi', e.target, 'aSuLRPtT-4rW9bnHU')
-      .then((result) => {
-        console.log(result.text);
-      }, (error) => {
-        console.log(error.text);
-      });
+    emailjs.sendForm('service_k80978p', 'template_yid9bpi', e.target, 'aSuLRPtT-4rW9bnHU');
+    // .then((result) => {
+    //   console.log(result.text);
+    // }, (error) => {
+    //   console.log(error.text);
+    // });
     setFormData({
       name: '',
       email: '',
