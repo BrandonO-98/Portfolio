@@ -54,7 +54,7 @@ export default function Footer({ links, logo, socials }) {
                 href={social.url}
                 alt={social.label}
                 target="_blank"
-                className="grid items-center justify-items-center w-full h-full"
+                className="grid items-center justify-items-center w-full h-full duration-200 ease-in hover:translate-x-1 hover:-translate-y-1"
                 rel="noreferrer"
               >
                 {socialIcons[index]}
