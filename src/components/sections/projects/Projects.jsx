@@ -3,7 +3,7 @@ import Cards from 'components/elements/Cards';
 
 export default function Projects() {
   return (
-    <div className="grid mx-10 my-20 items-center justify-items-center">
+    <div className="grid my-16 w-screen items-center justify-items-center">
       <Cards />
     </div>
   );

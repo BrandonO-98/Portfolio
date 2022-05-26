@@ -5,6 +5,7 @@ import Timeline from 'components/sections/timeline/Timeline';
 import Projects from 'components/sections/projects/Projects';
 import Navbar from 'components/sections/navbar/Navbar';
 import Hero from 'components/sections/hero/Hero';
+import Contact from 'components/sections/contact/Contact';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <About />
       <Timeline />
       <Projects />
+      <Contact />
     </div>
   );
 }
