@@ -9,7 +9,7 @@ export default function About() {
     <div className="grid h-[1000px] w-screen items-center justify-items-center">
       <div className="grid w-10/12 my-12 h-[750px] bg-white shadow-lg lg:max-w-6xl">
         <div className="relative grid items-center justify-items-center">
-          <h2 className="p-8 pb-0 text-lg font-bold justify-self-start ">About</h2>
+          {/* <h2 className="p-8 pb-0 text-lg font-bold justify-self-start ">About</h2> */}
           {/* <div className="grid items-center justify-items-center
           bg-water bg-cover w-10/12 h-full rounded-xl shadow-xl"></div> */}
           <img src={closeup} alt="closeup" className="h-80 w-80 rounded-full border-4 border-green-500" />

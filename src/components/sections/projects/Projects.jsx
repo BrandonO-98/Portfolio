@@ -1,7 +1,10 @@
 import React from 'react';
+import Cards from 'components/elements/Cards';
 
 export default function Projects() {
   return (
-    <div className="bg-green-400">yo</div>
+    <div className="grid mx-10 my-20 items-center justify-center">
+      <Cards />
+    </div>
   );
 }

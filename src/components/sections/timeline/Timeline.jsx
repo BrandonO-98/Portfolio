@@ -7,7 +7,7 @@ import timelineData from './TimelineData';
 
 export default function Timeline() {
   return (
-    <div className="grid w-full items-center justify-content-center">
+    <div className="grid w-screen items-center justify-content-center">
       <a
         target="_blanck"
         href="/Resume_Developer.pdf"
