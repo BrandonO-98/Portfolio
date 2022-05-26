@@ -6,10 +6,10 @@ import { ReactComponent as Python } from 'assets/icons/python.svg';
 
 export default function About() {
   return (
-    <div className="grid h-screen w-screen items-center justify-items-center">
+    <div className="grid h-[1000px] w-screen items-center justify-items-center">
       <div className="grid w-10/12 my-12 h-[750px] bg-white shadow-lg lg:max-w-6xl">
         <div className="relative grid items-center justify-items-center">
-          <h2 className="p-8 pb-0 text-lg font-bold justify-self-start ">About Me</h2>
+          <h2 className="p-8 pb-0 text-lg font-bold justify-self-start ">About</h2>
           {/* <div className="grid items-center justify-items-center
           bg-water bg-cover w-10/12 h-full rounded-xl shadow-xl"></div> */}
           <img src={closeup} alt="closeup" className="h-80 w-80 rounded-full border-4 border-green-500" />
@@ -44,7 +44,7 @@ export default function About() {
           <div>
             <p className="px-6 pb-4 indent-6">
               Outside of academia, I also completed intermediate/advanced courses on
-              <span className="text-green-600 font-bold"> Javascript (Es6 and React)</span>
+              <span className="text-green-600 font-bold"> Javascript (Es6 and React) </span>
               as  well as
               <span className="text-green-600 font-bold"> HTML/CSS</span>
               . Since then, I have decided
