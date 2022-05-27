@@ -8,8 +8,8 @@ export default function Card({
   },
 }) {
   return (
-    <div className="grid justify-items-start bg-white h-96 w-80 shadow-2xl rounded-2xl overflow-hidden my-10
-    ease-in duration-100 hover:-translate-x-2 hover:-translate-y-2 sm:w-96 md:w-72 lg:w-80"
+    <div className="grid justify-items-start bg-white h-96 w-80 shadow-2xl rounded-2xl overflow-hidden my-8
+    ease-in duration-100 hover:-translate-x-2 hover:-translate-y-2 sm:w-96 md:w-80 lg:w-96"
     >
       <video src={vid} autoPlay muted loop type="video/mp4" className="w-full" />
       <h2 className="font-bold text-md px-4 pt-2 pb-0">{header}</h2>

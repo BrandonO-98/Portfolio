@@ -24,9 +24,9 @@ export default function Navbar({
             <Developer className="w-8 h-8 fill-black" />
           </a>
           <h1 className="text-black pl-4 font-bold drop-shadow-xl">
-            <a href={links[0].url} className="text-xl">{logo.brand}</a>
+            <a href={links[0].url} className="text-md sm:text-xl">{logo.brand}</a>
           </h1>
-          <h2 className="text-green-600 relative top-1 left-2 font-bold">
+          <h2 className="text-green-600 relative top-1 left-2 font-bold text-sm sm:text-normal">
             <span className="text-black">/ </span>
             Web Developer
           </h2>

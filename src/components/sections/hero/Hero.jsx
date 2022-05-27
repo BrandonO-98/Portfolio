@@ -1,15 +1,27 @@
 import React from 'react';
 // import closeup from 'assets/images/closeup.jpg';
+import PropTypes from 'prop-types';
 import bodyshot from 'assets/images/bodyshot.jpg';
+import { ReactComponent as Facebook } from 'assets/icons/facebook.svg';
+import { ReactComponent as Instagram } from 'assets/icons/instagram.svg';
+import { ReactComponent as Github } from 'assets/icons/github.svg';
+import { ReactComponent as Linkedin } from 'assets/icons/linkedin.svg';
+import { Link } from 'lib/Proptypes';
 
-export default function Hero() {
+export default function Hero({ socials }) {
+  const socialClassName = 'stroke-black h-8 duration-300 hover:fill-green-500 sm:h-9';
+  const socialIcons = [<Facebook className={socialClassName} />,
+    <Instagram className={socialClassName} />,
+    <Github className={socialClassName} />,
+    <Linkedin className={socialClassName} />];
+
   return (
-    <section className="grid h-[750px] w-full max-w-full justify-items-center items-center my-11">
+    <section className="grid h-[750px] w-full max-w-full justify-items-center items-center my-12">
       <div className=" grid bg-code bg-cover w-11/12 h-full justify-items-center items-center shadow-2xl rounded-md">
         <div className="bg-white grid grid-cols-1 w-10/12 h-5/6 justify-items-center items-center rounded-2xl overflow-hidden md:h-4/6 md:grid-cols-2 lg:max-w-5xl">
           <div className="grid justify-items-center">
             <h2 className="h-8 m-8 text-green-500 font-bold text-3xl md:mt-0 md:text-5xl">Welcome!</h2>
-            <p className="m-8 font-serif text-md md:m-10 lg:text-lg">
+            <p className="m-4 font-serif text-md sm:m-8 md:m-10 lg:text-lg">
               I&#39;m Brandon Oscar Shew, a Computational Physicist turned Web Developer
               specializing in the front-end.
             </p>
@@ -35,6 +47,21 @@ export default function Hero() {
 
               </li>
             </ul>
+            <ul className="w-full h-full grid grid-cols-4 items-center justify-items-center px-8 pt-6 max-w-xs">
+              {socials.map((social, index) => (
+                <li className="grid items-center justify-items-center w-full h-full">
+                  <a
+                    href={social.url}
+                    alt={social.label}
+                    target="_blank"
+                    className="grid items-center justify-items-center w-full h-full duration-200 ease-in hover:translate-x-1 hover:-translate-y-1"
+                    rel="noreferrer"
+                  >
+                    {socialIcons[index]}
+                  </a>
+                </li>
+              ))}
+            </ul>
           </div>
           <div className="grid bg-white h-full w-full items-center justify-items-center">
             <img src={bodyshot} alt="Close-up of Brandon" className="w-72 object-fit border-4 rounded-full border-green-500 md:w-5/6" />
@@ -44,3 +71,14 @@ export default function Hero() {
     </section>
   );
 }
+
+Hero.propTypes = {
+  socials: PropTypes.arrayOf(Link),
+
+};
+
+Hero.defaultProps = {
+  socials: [{ url: 'https://www.facebook.com/brandon.shew.9/', label: 'social1' }, { url: 'https://www.instagram.com/brandon_o.shew/', label: 'social2' },
+    { url: 'https://github.com/BrandonO-98', label: 'social3' }, { url: 'https://www.linkedin.com/in/brandon-shew-a9572bb2', label: 'social4' },
+  ],
+};

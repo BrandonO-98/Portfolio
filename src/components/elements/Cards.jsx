@@ -4,7 +4,7 @@ import Card from 'components/elements/Card';
 
 export default function Cards({ cardData }) {
   return (
-    <div className="grid mt-12 items-center justify-items-center md:grid-cols-2 md:w-[700px] lg:max-w-[900px] lg:w-[900px]">
+    <div className="grid mt-4 items-center justify-items-center md:grid-cols-2 md:w-[700px] lg:max-w-[900px] lg:w-[900px]">
       {cardData.map((item) => (
         <Card data={item} />
       ))}

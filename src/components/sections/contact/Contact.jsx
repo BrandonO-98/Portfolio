@@ -35,14 +35,15 @@ export default function Contact() {
     });
     setIsSubmitted(true);
   }
-  const inputClassName = ' h-12 w-full rounded-md bg-green-100 my-3 indent-5';
+  const inputClassName = 'h-12 w-full rounded-md bg-green-100 my-3 indent-5';
   return (
-    <div className="grid w-full h-screen items-center justify-items-center">
+    <div className="grid w-full mb-12 items-center justify-items-center ">
       <SectionHeader header="Contact" />
-      <div className="grid w-10/12 h-[750px] bg-white items-center justify-items-center shadow-xl rounded-xl border">
-        <div className="flex flex-col items-center justify-center h-full w-96">
-          <h2 className="text-[20px] font-bold h-20 md:text-[30px]">Grab a Coffee & Let&apos;s Chat</h2>
-          <form onSubmit={handleSubmit} className="flex flex-col w-72 h-[500px] items-center justify-center shadow-xl rounded-xl border border-green-600 sm:w-80 md:w-96">
+      <div className="grid w-10/12 bg-white mt-12 pb-10 items-center justify-items-center shadow-xl rounded-xl border">
+        <div className="flex flex-col items-center justify-center pt-10 h-full w-full md:w-96">
+          {/* <h2 className="text-[16px] py-4 font-bold sm:text-[20px] md:text-[30px]">
+          Grab a Coffee & Let&apos;s Chat</h2> */}
+          <form onSubmit={handleSubmit} className="flex flex-col w-72 h-[500px] items-center justify-center rounded-xl border border-green-600 sm:w-80 md:w-96">
             <input
               type="text"
               placeholder="Full name"
