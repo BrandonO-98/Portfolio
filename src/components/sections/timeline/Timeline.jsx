@@ -3,16 +3,18 @@ import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeli
 import 'react-vertical-timeline-component/style.min.css';
 import { ReactComponent as WorkIcon } from 'assets/icons/work.svg';
 import { ReactComponent as SchoolIcon } from 'assets/icons/school.svg';
+import SectionHeader from 'components/elements/SectionHeader';
 import timelineData from './TimelineData';
 
 export default function Timeline() {
   return (
-    <div className="grid w-screen items-center justify-content-center">
+    <div className="grid w-full items-center justify-content-center">
+      <SectionHeader header="Resume" />
       <a
         target="_blanck"
         href="/Resume_Developer.pdf"
         download="Resume_Developer.pdf"
-        className="justify-self-end mr-40 ease-in duration-300 border border-green-500 bg-green-500 text-white px-8 py-2 rounded-full font-bold
+        className="justify-self-end mr-96 ease-in duration-300 border border-green-500 bg-green-500 text-white px-8 py-2 mt-4 rounded-full font-bold
                   hover:text-black hover:bg-white"
       >
         Download Resume PDF

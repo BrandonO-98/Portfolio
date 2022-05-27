@@ -28,7 +28,7 @@ const timelineData = [
     desc: ['Computational Physics (Computer Science applications in Physics)'],
     buttonTxt: '',
     buttonLink: '',
-    date: 'November 2021',
+    date: 'September 2021',
     icon: 'school',
   },
   {
@@ -41,7 +41,7 @@ const timelineData = [
     observables.`],
     buttonTxt: 'Sarah Rauscher Lab',
     buttonLink: 'https://rauscher-group.physics.utoronto.ca',
-    date: 'June 2020 - April 2021',
+    date: 'July 2020 - September 2021',
     icon: 'work',
   },
   {
