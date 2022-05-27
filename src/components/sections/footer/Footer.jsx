@@ -17,17 +17,17 @@ export default function Footer({ links, logo, socials }) {
     <Linkedin className="stroke-white h-6 duration-300 hover:fill-darkBlue md:h-8" />];
 
   return (
-    <div className="grid h-50 bg-green-600 w-screen">
+    <div className="grid h-50 bg-green-600 w-full max-w-full">
       {/* footer-container */}
       <div className="grid grid-cols-1 justify-items-center ">
         {/* link-container */}
         {/* 'double for loop' to create 8 links total */}
 
-        <ul className="grid grid-rows-4 text-white justify-items-center pt-2 w-[1000px] text-lg font-bold lg:grid-cols-4 lg:pt-0 lg:h-20">
+        <ul className="grid grid-rows-4 text-white justify-items-center pt-2 w-full text-lg font-bold lg:grid-cols-4 lg:pt-0 lg:h-20">
           {/* links-headers */}
           {links.map((link) => (
             <li className="text-white w-full font-normal h-8 duration-200 ease-in
-            lg:h-20 lg:w-40 hover:font-bold hover:border-t-4 hover:border-black"
+            lg:h-20 lg:w-40 hover:font-bold hover:border-y-4 hover:border-white"
             >
               {/* links */}
               <a href={link.url} alt="hi" target="_blank" rel="noreferrer" className="grid w-full h-full items-center justify-items-center">
@@ -42,7 +42,7 @@ export default function Footer({ links, logo, socials }) {
         {/* footer-bar */}
         <div className="flex items-center justify-items-center">
           {/* footer-logo-container */}
-          <Developer className=" w-8 h-8 fill-white" />
+          <Developer className="ml-2 w-8 h-8 fill-white" />
           <h1 className="text-white text-xl font-bold w-full pl-4">{logo.brand}</h1>
 
         </div>
@@ -81,6 +81,6 @@ Footer.defaultProps = {
     url: 'https://flowbite.com/docs/images/logo.svg',
     brand: 'Brandon O. Shew',
   },
-  socials: [{ url: 'https://www.facebook.com/', label: 'social1' }, { url: 'https://www.instagram.com/', label: 'social2' },
-    { url: 'https://twitter.com/?lang=en', label: 'social3' }, { url: 'https://www.linkedin.com/', label: 'social4' }],
+  socials: [{ url: 'https://www.facebook.com/brandon.shew.9/', label: 'social1' }, { url: 'https://www.instagram.com/brandon_o.shew/', label: 'social2' },
+    { url: 'https://twitter.com/Brandon43696011', label: 'social3' }, { url: 'www.linkedin.com/in/brandon-shew-a9572bb2', label: 'social4' }],
 };

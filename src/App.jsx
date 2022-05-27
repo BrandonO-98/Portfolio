@@ -10,11 +10,11 @@ import Footer from 'components/sections/footer/Footer';
 
 function App() {
   return (
-    <div className="grid m-0">
+    <div className="grid">
       <Navbar />
       <Hero />
       <About />
-      <Timeline />
+      {/* <Timeline /> */}
       <Projects />
       <Contact />
       <Footer />
