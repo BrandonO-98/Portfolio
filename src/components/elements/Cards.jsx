@@ -22,6 +22,8 @@ Cards.defaultProps = {
       tech: 'React, HTML/CSS',
       linkLabel: 'Meme Generator App',
       linkPath: 'https://google.com',
+      docLabel: 'Build Docs',
+      docPath: 'https://google.com',
     },
     {
       vid: 'video2.mp4',
@@ -31,6 +33,8 @@ Cards.defaultProps = {
       tech: 'React, HTML/CSS',
       linkLabel: 'Tenzies App',
       linkPath: 'https://google.com',
+      docLabel: 'Build Docs',
+      docPath: 'https://google.com',
     },
     {
       vid: 'video2.mp4',
@@ -39,6 +43,8 @@ Cards.defaultProps = {
       linkLabel: 'Notes App',
       tech: 'JS ES6, HTML/CSS',
       linkPath: 'https://google.com',
+      docLabel: 'Build Docs',
+      docPath: 'https://google.com',
     },
     {
       vid: 'video1.mp4',
@@ -48,6 +54,8 @@ Cards.defaultProps = {
       tech: 'React, HTML, Tailwind CSS, Axios',
       linkLabel: 'Restaurant Guide App',
       linkPath: 'https://google.com',
+      docLabel: 'Build Docs',
+      docPath: 'https://google.com',
     },
   ],
 };
@@ -60,5 +68,7 @@ Cards.propTypes = {
     tech: PropTypes.string,
     linkLabel: PropTypes.string,
     linkPath: PropTypes.string,
+    docLabel: PropTypes.string,
+    docPath: PropTypes.string,
   }),
 };

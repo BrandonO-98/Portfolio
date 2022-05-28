@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 // import closeup from 'assets/images/closeup.jpg';
 import PropTypes from 'prop-types';
@@ -8,7 +9,9 @@ import { ReactComponent as Github } from 'assets/icons/github.svg';
 import { ReactComponent as Linkedin } from 'assets/icons/linkedin.svg';
 import { Link } from 'lib/Proptypes';
 
-export default function Hero({ socials }) {
+export default function Hero({
+  socials, scrollToSection, home, resume, projects,
+}) {
   const socialClassName = 'stroke-black h-8 duration-300 hover:fill-green-500 sm:h-9';
   const socialIcons = [<Facebook className={socialClassName} />,
     <Instagram className={socialClassName} />,
@@ -16,7 +19,7 @@ export default function Hero({ socials }) {
     <Linkedin className={socialClassName} />];
 
   return (
-    <section className="grid h-[750px] w-full max-w-full justify-items-center items-center my-12">
+    <section ref={home} className="grid h-[750px] w-full max-w-full justify-items-center items-center my-12">
       <div className=" grid bg-code bg-cover w-11/12 h-full justify-items-center items-center shadow-2xl rounded-md">
         <div className="bg-white grid grid-cols-1 w-10/12 h-5/6 justify-items-center items-center rounded-2xl overflow-hidden md:h-4/6 md:grid-cols-2 lg:max-w-5xl">
           <div className="grid justify-items-center">
@@ -27,23 +30,25 @@ export default function Hero({ socials }) {
             </p>
             <ul className="grid grid-cols-2 items-center justify-items-center">
               <li className="grid">
-                <a
-                  href="/"
+                <button
+                  onClick={() => scrollToSection(resume)}
+                  type="button"
                   className="ease-in duration-300 text-sm border border-green-500 bg-green-500 py-2 px-8 text-white rounded-full font-bold
                   hover:text-black hover:bg-white md:px-6 lg:text-lg lg:mr-2"
                 >
                   Resume
-                </a>
+                </button>
 
               </li>
               <li className="grid">
-                <a
-                  href="/"
+                <button
+                  onClick={() => scrollToSection(projects)}
+                  type="button"
                   className="ease-in duration-300 border border-green-500 py-2 px-8 rounded-full font-bold
                   hover:text-white hover:bg-green-500 md:px-6 lg:text-lg lg:px-8 lg:mr-2"
                 >
                   Projects
-                </a>
+                </button>
 
               </li>
             </ul>
@@ -74,6 +79,10 @@ export default function Hero({ socials }) {
 
 Hero.propTypes = {
   socials: PropTypes.arrayOf(Link),
+  scrollToSection: PropTypes.func.isRequired,
+  home: PropTypes.number.isRequired,
+  resume: PropTypes.number.isRequired,
+  projects: PropTypes.number.isRequired,
 
 };
 

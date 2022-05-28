@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import emailjs from 'emailjs-com';
 import SectionHeader from 'components/elements/SectionHeader';
 
-export default function Contact() {
+export default function Contact({ contact }) {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -22,7 +23,7 @@ export default function Contact() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    emailjs.sendForm('service_k80978p', 'template_yid9bpi', e.target, 'aSuLRPtT-4rW9bnHU');
+    emailjs.sendForm('service_k80978p', 'template_yid9bpi', e.target, process.env.EMAIL_API_KEY);
     // .then((result) => {
     //   console.log(result.text);
     // }, (error) => {
@@ -37,7 +38,7 @@ export default function Contact() {
   }
   const inputClassName = 'h-12 w-full rounded-md bg-green-100 my-3 indent-5';
   return (
-    <div className="grid w-full mb-12 items-center justify-items-center ">
+    <div ref={contact} className="grid w-full mb-12 items-center justify-items-center ">
       <SectionHeader header="Contact" />
       <div className="grid w-10/12 bg-white mt-12 pb-10 items-center justify-items-center shadow-xl rounded-xl border">
         <div className="flex flex-col items-center justify-center pt-10 h-full w-full md:w-96">
@@ -86,3 +87,7 @@ export default function Contact() {
     </div>
   );
 }
+
+Contact.propTypes = {
+  contact: PropTypes.number.isRequired,
+};

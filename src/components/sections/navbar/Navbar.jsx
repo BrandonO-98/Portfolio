@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable import/no-absolute-path */
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
@@ -7,8 +8,9 @@ import { ReactComponent as Cross } from 'assets/icons/menu-close.svg';
 import { ReactComponent as Developer } from 'assets/icons/web.svg';
 // 3 props {img, array of objs, }
 export default function Navbar({
-  links, logo,
+  links, logo, scrollToSection, home, about, resume, projects, contact,
 }) {
+  const sections = [home, about, resume, projects, contact];
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
 
@@ -18,21 +20,21 @@ export default function Navbar({
       {/* navbar */}
       <div className="relative grid grid-cols-2 h-full w-full justify-items-center items-center lg:max-w-6xl">
         {/* navbar-container */}
-        <div className="flex items-center h-full lg:mr-40">
+        <div className="flex items-center justify-start w-full h-full ml-16 md:ml-24 lg:ml-10">
           {/* logo-container */}
-          <a href="/" className="pl-2">
+          <a href="/">
             <Developer className="w-8 h-8 fill-black" />
           </a>
           <h1 className="text-black pl-4 font-bold drop-shadow-xl">
-            <a href={links[0].url} className="text-md sm:text-xl">{logo.brand}</a>
+            <a href={links[0].url} className="text-md md:text-lg lg:text-xl">{logo.brand}</a>
           </h1>
-          <h2 className="text-green-600 relative top-1 left-2 font-bold text-sm sm:text-normal">
-            <span className="text-black">/ </span>
+          <h2 className="text-green-600 relative top-1 left-2 font-bold text-normal hidden md:block">
+            <span className="text-black hidden md:inline">/ </span>
             Web Developer
           </h2>
         </div>
         <ul className={click ? 'bg-white absolute h-96 w-full -left-0 top-20 grid grid-rows-5 ease-in duration-500 lg:mr-32 lg:grid-rows-none lg:grid-cols-5 lg:static lg:h-20'
-          : 'bg-white absolute h-96 w-full -left-full top-20 grid grid-rows-5 ease-in duration-500 lg:mr-32 lg:grid-rows-none lg:grid-cols-5 lg:static lg:h-full'}
+          : 'bg-white absolute h-96 w-full -left-full top-20 grid grid-rows-5 ease-in duration-500 lg:grid-rows-none lg:grid-cols-5 lg:static lg:h-full'}
         >
           {links.map((link, index) => (
             <li
@@ -40,20 +42,21 @@ export default function Navbar({
               className={index === (links.length - 1) ? 'grid h-full self-center items-center justify-items-center'
                 : 'grid h-full'}
             >
-              <a
-                href={link.url}
+              <button
+                type="button"
+                onClick={() => scrollToSection(sections[index])}
                 className={index === (links.length - 1)
                   ? 'grid w-80 h-10 bg-white text-black items-center justify-items-center border-2 border-white rounded-3xl lg:w-full hover:text-white hover:font-bold hover:bg-green-500 ease-in duration-300'
                   : 'grid text-black h-full items-center justify-items-center ease-in duration-100 hover:text-green-400 hover:border-b-4 hover:border-green-500  hover:font-bold lg:h-full'}
               >
                 {link.label}
-              </a>
+              </button>
             </li>
           ))}
         </ul>
         <button
           type="button"
-          className="grid bg-white h-full w-15 lg:hidden items-center justify-center"
+          className="grid bg-white h-full w-full items-center justify-end mr-16 md:mr-24 lg:hidden"
           onClick={handleClick}
         >
           {click ? <Cross className="w-full h-15 stroke-black" /> : <Burger className="w-full h-15 stroke-black" />}
@@ -66,8 +69,9 @@ export default function Navbar({
 Navbar.propTypes = {
   links: PropTypes.arrayOf(Link),
   logo: Media,
+  scrollToSection: PropTypes.func.isRequired,
 };
-
+// url is not usd
 Navbar.defaultProps = {
   links: [
     {
