@@ -13,5 +13,5 @@ export default function Projects({ projects }) {
 }
 
 Projects.propTypes = {
-  projects: PropTypes.number.isRequired,
+  projects: PropTypes.shape({}).isRequired,
 };

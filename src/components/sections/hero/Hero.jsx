@@ -80,9 +80,9 @@ export default function Hero({
 Hero.propTypes = {
   socials: PropTypes.arrayOf(Link),
   scrollToSection: PropTypes.func.isRequired,
-  home: PropTypes.number.isRequired,
-  resume: PropTypes.number.isRequired,
-  projects: PropTypes.number.isRequired,
+  home: PropTypes.shape({}).isRequired,
+  resume: PropTypes.shape({}).isRequired,
+  projects: PropTypes.shape({}).isRequired,
 
 };
 

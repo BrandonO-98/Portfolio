@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { cardDataProps } from 'lib/Proptypes';
 import Card from 'components/elements/Card';
 
 export default function Cards({ cardData }) {
@@ -23,7 +24,7 @@ Cards.defaultProps = {
       linkLabel: 'Meme Generator App',
       linkPath: 'https://google.com',
       docLabel: 'Build Docs',
-      docPath: 'https://google.com',
+      docPath: 'https://docs.google.com/document/d/1roaeQUtpA5UeB5AHVdRUiGeCQD6tLdmzMKE9Um14i0Q/edit?usp=sharing',
     },
     {
       vid: 'video2.mp4',
@@ -34,7 +35,7 @@ Cards.defaultProps = {
       linkLabel: 'Tenzies App',
       linkPath: 'https://google.com',
       docLabel: 'Build Docs',
-      docPath: 'https://google.com',
+      docPath: 'https://docs.google.com/document/d/1roaeQUtpA5UeB5AHVdRUiGeCQD6tLdmzMKE9Um14i0Q/edit?usp=sharing',
     },
     {
       vid: 'video2.mp4',
@@ -44,7 +45,7 @@ Cards.defaultProps = {
       tech: 'JS ES6, HTML/CSS',
       linkPath: 'https://google.com',
       docLabel: 'Build Docs',
-      docPath: 'https://google.com',
+      docPath: 'https://docs.google.com/document/d/1roaeQUtpA5UeB5AHVdRUiGeCQD6tLdmzMKE9Um14i0Q/edit?usp=sharing',
     },
     {
       vid: 'video1.mp4',
@@ -55,20 +56,11 @@ Cards.defaultProps = {
       linkLabel: 'Restaurant Guide App',
       linkPath: 'https://google.com',
       docLabel: 'Build Docs',
-      docPath: 'https://google.com',
+      docPath: 'https://docs.google.com/document/d/1roaeQUtpA5UeB5AHVdRUiGeCQD6tLdmzMKE9Um14i0Q/edit?usp=sharing',
     },
   ],
 };
 
 Cards.propTypes = {
-  cardData: PropTypes.arrayOf({
-    vid: PropTypes.string,
-    header: PropTypes.string,
-    desc: PropTypes.string,
-    tech: PropTypes.string,
-    linkLabel: PropTypes.string,
-    linkPath: PropTypes.string,
-    docLabel: PropTypes.string,
-    docPath: PropTypes.string,
-  }),
+  cardData: PropTypes.arrayOf(cardDataProps),
 };

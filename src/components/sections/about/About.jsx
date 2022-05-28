@@ -78,5 +78,5 @@ export default function About({ about }) {
 }
 
 About.propTypes = {
-  about: PropTypes.number.isRequired,
+  about: PropTypes.shape({}).isRequired,
 };

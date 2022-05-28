@@ -10,9 +10,21 @@ export const Media = PropTypes.shape({
   brand: PropTypes.string.isRequired,
 });
 
+export const cardDataProps = PropTypes.shape({
+  vid: PropTypes.string,
+  header: PropTypes.string,
+  desc: PropTypes.string,
+  tech: PropTypes.string,
+  linkLabel: PropTypes.string,
+  linkPath: PropTypes.string,
+  docLabel: PropTypes.string,
+  docPath: PropTypes.string,
+});
+
 const customProps = {
   Link,
   Media,
+  cardDataProps,
 };
 
 export default customProps;

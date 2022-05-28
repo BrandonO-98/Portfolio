@@ -89,5 +89,5 @@ export default function Contact({ contact }) {
 }
 
 Contact.propTypes = {
-  contact: PropTypes.number.isRequired,
+  contact: PropTypes.shape({}).isRequired,
 };

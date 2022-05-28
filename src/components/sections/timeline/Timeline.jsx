@@ -64,5 +64,5 @@ export default function Timeline({ resume }) {
 }
 
 Timeline.propTypes = {
-  resume: PropTypes.number.isRequired,
+  resume: PropTypes.shape({}).isRequired,
 };
