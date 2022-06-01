@@ -1,6 +1,6 @@
+/* eslint-disable no-unused-vars */
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import emailjs from 'emailjs-com';
 import SectionHeader from 'components/elements/SectionHeader';
 
 export default function Contact({ contact }) {
@@ -23,12 +23,22 @@ export default function Contact({ contact }) {
 
   function handleSubmit(e) {
     e.preventDefault();
-    emailjs.sendForm('service_k80978p', 'template_yid9bpi', e.target, process.env.EMAIL_API_KEY);
-    // .then((result) => {
-    //   console.log(result.text);
-    // }, (error) => {
-    //   console.log(error.text);
-    // });
+    fetch('https://formsubmit.co/ajax/352723cdbb03dcb368a35da1a0cb0e3e', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Accept: 'application/json',
+      },
+      body: JSON.stringify({
+        name: formData.name,
+        message: formData.message,
+        email: formData.email,
+      }),
+    })
+      .then((response) => response.json())
+      .then((data) => console.log(data))
+      .catch((error) => console.log(error));
+
     setFormData({
       name: '',
       email: '',
@@ -44,7 +54,11 @@ export default function Contact({ contact }) {
         <div className="flex flex-col items-center justify-center pt-10 h-full w-full md:w-96">
           {/* <h2 className="text-[16px] py-4 font-bold sm:text-[20px] md:text-[30px]">
           Grab a Coffee & Let&apos;s Chat</h2> */}
-          <form onSubmit={handleSubmit} className="flex flex-col w-72 h-[500px] items-center justify-center rounded-xl border border-green-600 sm:w-80 md:w-96">
+          <form
+            onSubmit={handleSubmit}
+            className="flex flex-col w-72 h-[500px] items-center justify-center rounded-xl border border-green-600 sm:w-80 md:w-96"
+          >
+            {/* <input type="hidden" name="_captcha" value="false" /> */}
             <input
               type="text"
               placeholder="Full name"
