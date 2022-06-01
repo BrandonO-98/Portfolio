@@ -16,40 +16,40 @@ export default function Cards({ cardData }) {
 Cards.defaultProps = {
   cardData: [
     {
-      vid: 'video1.mp4',
+      vid: 'MemeGen.mp4',
       header: 'Meme Generator',
       desc: `On button click a random image is displayed after a set is fetched on 
       page render. Meme top and bottom text are accessible by the user.`,
       tech: 'React, HTML/CSS',
       linkLabel: 'Meme Generator App',
-      linkPath: 'https://google.com',
+      linkPath: 'https://leafy-kleicha-5ef554.netlify.app',
       docLabel: 'Build Docs',
       docPath: 'https://docs.google.com/document/d/1roaeQUtpA5UeB5AHVdRUiGeCQD6tLdmzMKE9Um14i0Q/edit?usp=sharing',
     },
     {
-      vid: 'video2.mp4',
+      vid: 'Tenzies.mp4',
       header: 'Tenzies Game',
       desc: `Clicking start begins the game. Dice are randomized periodically, freeze all at
       the same value to win.`,
       tech: 'React, HTML/CSS',
       linkLabel: 'Tenzies App',
-      linkPath: 'https://google.com',
+      linkPath: 'https://beautiful-cheesecake-ed61f7.netlify.app',
       docLabel: 'Build Docs',
       docPath: 'https://docs.google.com/document/d/1roaeQUtpA5UeB5AHVdRUiGeCQD6tLdmzMKE9Um14i0Q/edit?usp=sharing',
     },
     {
-      vid: 'video2.mp4',
+      vid: 'Notes.mp4',
       header: 'Notes',
       desc: 'This web app built in Es6 JS allows the user to create, update and delete notes.',
       linkLabel: 'Notes App',
       tech: 'JS ES6, HTML/CSS',
-      linkPath: 'https://google.com',
+      linkPath: 'https://remarkable-sawine-af096d.netlify.app',
       docLabel: 'Build Docs',
       docPath: 'https://docs.google.com/document/d/1roaeQUtpA5UeB5AHVdRUiGeCQD6tLdmzMKE9Um14i0Q/edit?usp=sharing',
     },
     {
       vid: 'video1.mp4',
-      header: 'Restaurant Guide',
+      header: 'Restaurant Guide - Comming Soon',
       desc: `On map change, a set of restaurants are fetched from an API. Restaurant information 
       is displayed for the user. The map can be changed by dragging, or searching in form.`,
       tech: 'React, HTML, Tailwind CSS, Axios',

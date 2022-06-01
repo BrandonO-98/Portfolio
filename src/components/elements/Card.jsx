@@ -16,6 +16,7 @@ export default function Card({
       <div className="">
         <a
           href={data.linkPath}
+          target="_blanck"
           alt="Link to Project"
           className="text-black border border-black rounded-full px-2 py-1 mx-2
         hover:text-green-700 hover:border-green-600"
