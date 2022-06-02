@@ -48,8 +48,8 @@ Cards.defaultProps = {
       docPath: 'https://docs.google.com/document/d/1roaeQUtpA5UeB5AHVdRUiGeCQD6tLdmzMKE9Um14i0Q/edit?usp=sharing',
     },
     {
-      vid: 'video1.mp4',
-      header: 'Restaurant Guide - Comming Soon',
+      vid: 'soon.mp4',
+      header: 'Restaurant Guide',
       desc: `On map change, a set of restaurants are fetched from an API. Restaurant information 
       is displayed for the user. The map can be changed by dragging, or by form entry.`,
       tech: 'React, HTML, Tailwind CSS, Axios',
