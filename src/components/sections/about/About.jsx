@@ -38,12 +38,12 @@ export default function About({ about }) {
             Previous to admission into the Physics program at the University of Toronto in
             2016, I intended to pursue a career in teaching
             and this remained true for quite some time. It wasn&apos;t until I volunteered in a
-            Physics lab in my third year when I was
+            Physics lab in 2019 when I was
             first exposed to programming. I was tasked with identifying particles in an
             image captured by a TIRF microscope. Long
             story short, many sleepless nights debugging came with unexpected gratification
             and excitement, especially when my program ran -
-            <span className="italic"> on ocassion. </span>
+            <span className="italic"> on occasion. </span>
             Discovering this new passion, I went on to earn a MSc in Computational
             Physics
             where I sharpened my skills in
@@ -63,7 +63,7 @@ export default function About({ about }) {
               as  well as
               <span className="text-green-600 font-bold"> HTML/CSS</span>
               . Since then, I have decided
-              to lean towards web-development instead of data analysis. I hope to
+              to lean towards web-development. I hope to
               be able to call myself a full-stack developer within the comming years.
             </p>
             <p className="px-6 indent-6">
