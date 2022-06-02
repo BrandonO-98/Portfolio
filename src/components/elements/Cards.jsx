@@ -18,8 +18,8 @@ Cards.defaultProps = {
     {
       vid: 'MemeGen.mp4',
       header: 'Meme Generator',
-      desc: `On button click a random image is displayed after a set is fetched on 
-      page render. Meme top and bottom text are accessible to the user.`,
+      desc: `On page render a set of images are fetched from an API. Clicking the button 
+      renders a random image from the fetched set. Meme top and bottom text are accessible to the user.`,
       tech: 'React, HTML/CSS',
       linkLabel: 'Meme Generator App',
       linkPath: 'https://leafy-kleicha-5ef554.netlify.app',
@@ -29,8 +29,8 @@ Cards.defaultProps = {
     {
       vid: 'Tenzies.mp4',
       header: 'Tenzies Game',
-      desc: `Clicking start begins the game. Dice are randomized periodically, freeze all dice at
-      the same value to win.`,
+      desc: `Clicking start begins the game. Dice are randomized periodically. Click the dice to 
+      freeze them. To win, all dice must be frozen with the same value.`,
       tech: 'React, HTML/CSS',
       linkLabel: 'Tenzies App',
       linkPath: 'https://beautiful-cheesecake-ed61f7.netlify.app',
@@ -40,7 +40,8 @@ Cards.defaultProps = {
     {
       vid: 'Notes.mp4',
       header: 'Notes',
-      desc: 'This web app built in ES6 JS allows the user to create, update and delete notes.',
+      desc: `This web app built in ES6 JS allows the user to create, update and delete notes.
+      Notes are saved to local storage so that refreshing the browser does not erase present notes.`,
       linkLabel: 'Notes App',
       tech: 'JS ES6, HTML/CSS',
       linkPath: 'https://remarkable-sawine-af096d.netlify.app',
@@ -50,8 +51,8 @@ Cards.defaultProps = {
     {
       vid: 'soon.mp4',
       header: 'Restaurant Guide',
-      desc: `On map change, a set of restaurants are fetched from an API. Restaurant information 
-      is displayed for the user. The map can be changed by dragging, or by form entry.`,
+      desc: `On map change, a set of restaurants is fetched from an API. Restaurant information 
+      is displayed for the user. The map can be changed by dragging, or searching in the search bar.`,
       tech: 'React, HTML, Tailwind CSS, Axios',
       linkLabel: 'Restaurant Guide App',
       linkPath: 'https://google.com',

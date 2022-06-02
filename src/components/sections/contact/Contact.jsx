@@ -51,12 +51,12 @@ export default function Contact({ contact }) {
     <div ref={contact} className="grid w-full mb-12 items-center justify-items-center ">
       <SectionHeader header="Contact" />
       <div className="grid w-10/12 bg-white mt-12 pb-10 items-center justify-items-center shadow-xl rounded-xl border">
-        <div className="flex flex-col items-center justify-center pt-10 h-full w-full md:w-96">
+        <div className="flex flex-col items-center justify-center pt-10 h-full w-full md:w-96 lg:w-5/6 max-w-[900px]">
           {/* <h2 className="text-[16px] py-4 font-bold sm:text-[20px] md:text-[30px]">
           Grab a Coffee & Let&apos;s Chat</h2> */}
           <form
             onSubmit={handleSubmit}
-            className="flex flex-col w-72 h-[500px] items-center justify-center rounded-xl border border-green-600 sm:w-80 md:w-96"
+            className="flex flex-col w-72 h-[600px] items-center justify-center rounded-xl border border-green-600 sm:w-80 md:w-96 lg:w-4/6"
           >
             {/* <input type="hidden" name="_captcha" value="false" /> */}
             <input
