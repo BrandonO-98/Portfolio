@@ -26,7 +26,13 @@ export default function Navbar({
             <Developer className="w-8 h-8 fill-black" />
           </a>
           <h1 className="text-black pl-4 font-bold drop-shadow-xl">
-            <a href={links[0].url} className="text-md md:text-lg lg:text-xl">{logo.brand}</a>
+            <button
+              type="button"
+              onClick={() => scrollToSection(sections[0])}
+              className="text-md md:text-lg lg:text-xl"
+            >
+              {logo.brand}
+            </button>
           </h1>
           <h2 className="text-green-600 relative top-1 left-2 font-bold text-normal hidden md:block">
             <span className="text-black hidden md:inline">/ </span>
