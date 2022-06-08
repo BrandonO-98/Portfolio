@@ -22,9 +22,12 @@ export default function Navbar({
         {/* navbar-container */}
         <div className="flex items-center justify-start w-full h-full ml-16 md:ml-24 lg:ml-10">
           {/* logo-container */}
-          <a href="/">
+          <button
+            type="button"
+            onClick={() => scrollToSection(sections[0])}
+          >
             <Developer className="w-8 h-8 fill-black" />
-          </a>
+          </button>
           <h1 className="text-black pl-4 font-bold drop-shadow-xl">
             <button
               type="button"
