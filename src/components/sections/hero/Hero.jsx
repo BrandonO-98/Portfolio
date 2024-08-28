@@ -25,8 +25,8 @@ export default function Hero({
           <div className="grid justify-items-center">
             <h2 className="h-8 m-8 text-green-500 font-bold text-3xl md:mt-0 md:text-5xl">Welcome!</h2>
             <p className="m-4 font-serif text-md sm:m-8 md:m-10 lg:text-lg">
-              I&#39;m Brandon Oscar Shew, a Computational Physicist turned Web Developer
-              specializing in the front-end.
+              I&#39;m Brandon Oscar Shew, a Computational Physicist turned Software Engineer
+              specializing in Full-Stack Web Development.
             </p>
             <ul className="grid grid-cols-2 items-center justify-items-center">
               <li className="grid">
