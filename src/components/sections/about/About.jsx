@@ -35,8 +35,8 @@ export default function About({ about }) {
         </div>
         <div className="py-6 grid items-start justify-items-center mt-8 md:grid-cols-2 md:py-8">
           <p className="px-6 indent-6">
-            Unexpectedly thrown into the development team of a Particle Tracking Algorithm
-            for the Gradinaru Lab as an undergrad researcher, I developed a passion for programming.
+            Unexpectedly thrown into a software development role as a physics researcher,
+            I developed a passion for programming.
             Many sleepless nights debugging came with new found gratification
             and excitement, especially when my program ran -
             <span className="italic"> on occasion. </span>
@@ -45,25 +45,24 @@ export default function About({ about }) {
             where I sharpened my skills in
             <span className="text-green-600 font-bold"> MATLAB</span>
             ,
-            <span className="text-green-600 font-bold"> Python</span>
-            ,
-            <span className="text-green-600 font-bold"> C++ </span>
+            <span className="text-green-600 font-bold"> Python </span>
             and
-            <span className="text-green-600 font-bold"> Shell Scripting</span>
+            <span className="text-green-600 font-bold"> C++</span>
+
             .
           </p>
           <div>
             <p className="px-6 py-4 indent-6 md:pb-4 md:pt-0">
-              I also further completed advanced courses focussing on
-              <span className="text-green-600 font-bold"> Java, Javascript (ES6/React) </span>
-              as  well as
-              <span className="text-green-600 font-bold"> HTML/CSS</span>
-              . Since then, I have decided
-              to lean towards web-development.
+              Over the past few years I have gained industry experience in API and
+              front-end development using
+              <span className="text-green-600 font-bold"> Java </span>
+              and
+              <span className="text-green-600 font-bold"> TypeScript </span>
+              via employment and contractor work.
             </p>
             <p className="px-6 indent-6">
-              {`Hobbywise, I enjoy watching movies, no matter how new or old, and spending time outdoors with family and friends. I also 
-          dig aquatic activities and hope to learn how to surf in the near future.`}
+              {`Hobbywise, I enjoy eatting and dancing salsa, spending time outdoors and swimming. 
+              I hope to learn how to surf in the near future.`}
             </p>
           </div>
         </div>

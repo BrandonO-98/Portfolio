@@ -26,7 +26,7 @@ export default function Hero({
             <h2 className="h-8 m-8 text-green-500 font-bold text-3xl md:mt-0 md:text-5xl">Welcome!</h2>
             <p className="m-4 font-serif text-md sm:m-8 md:m-10 lg:text-lg">
               I&#39;m Brandon Oscar Shew, a Computational Physicist turned Software Engineer
-              specializing in Full-Stack Web Development.
+              experienced in Full-Stack Web Development.
             </p>
             <ul className="grid grid-cols-2 items-center justify-items-center">
               <li className="grid">
@@ -88,6 +88,6 @@ Hero.propTypes = {
 
 Hero.defaultProps = {
   socials: [{ url: 'https://www.facebook.com/brandon.shew.9/', label: 'social1' }, { url: 'https://www.instagram.com/brandon_o.shew/', label: 'social2' },
-    { url: 'https://github.com/BrandonO-98', label: 'social3' }, { url: 'https://www.linkedin.com/in/brandon-shew-a9572bb2', label: 'social4' },
+    { url: 'https://github.com/BrandonO-98', label: 'social3' }, { url: 'https://www.linkedin.com/in/brandon-oscar-shew/', label: 'social4' },
   ],
 };

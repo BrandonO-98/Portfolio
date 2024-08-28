@@ -33,7 +33,7 @@ export default function Footer({ logo, socials }) {
           <h1 className="text-white text-md font-bold w-full pl-4 sm:text-2xl">{logo.brand}</h1>
 
         </div>
-        <p className="hidden text-white lg:grid">Copyright © 2022 Brandon Oscar Shew</p>
+        <p className="hidden text-white lg:grid">Copyright © 2024 Brandon Oscar Shew</p>
         <ul className="w-full h-full grid grid-cols-4 items-center justify-items-center sm:px-4 max-w-xs lg:px-8">
           {socials.map((social, index) => (
             <li className="grid items-center justify-items-center w-full h-full">
@@ -66,6 +66,6 @@ Footer.defaultProps = {
     brand: 'Brandon O. Shew',
   },
   socials: [{ url: 'https://www.facebook.com/brandon.shew.9/', label: 'social1' }, { url: 'https://www.instagram.com/brandon_o.shew/', label: 'social2' },
-    { url: 'https://github.com/BrandonO-98', label: 'social3' }, { url: 'https://www.linkedin.com/in/brandon-shew-a9572bb2', label: 'social4' },
+    { url: 'https://github.com/BrandonO-98', label: 'social3' }, { url: 'https://www.linkedin.com/in/brandon-oscar-shew/', label: 'social4' },
   ],
 };

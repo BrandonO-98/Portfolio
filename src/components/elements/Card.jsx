@@ -19,7 +19,7 @@ export default function Card({
       />
       <h2 className="justify-self-start font-bold text-md px-4 pt-2 pb-0">{data.header}</h2>
       <p className=" text-sm px-4">{data.desc}</p>
-      <p className=" text-xs px-4">{`Technologies: ${data.tech}`}</p>
+      <p className=" text-xs px-4">{data.tech}</p>
       <div className="">
         <a
           href={data.linkPath}

@@ -15,7 +15,7 @@ export default function Timeline({ resume }) {
       <SectionHeader header="Resume" />
       <div className="grid justify-self-center w-3/6 mt-12">
         <a
-          // target="_blanck"
+          target="_blanck"
           // href="/Resume_Developer.pdf"
           // download="Resume_Developer.pdf"
           href="https://docs.google.com/document/d/14Myx72Vp5I4nvxLh5xINxZGp5VteWv1JUMwsSz44eLA/edit?usp=sharing"
