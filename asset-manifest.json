@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.7c0d66f0.css",
+    "main.js": "/portfolio/static/js/main.37102f21.js",
+    "static/media/water.jpg": "/portfolio/static/media/water.191a34b34406decb1524.jpg",
+    "static/media/formal2.jpg": "/portfolio/static/media/formal2.62adfe37e161ac38ceb4.jpg",
+    "static/media/code.jpg": "/portfolio/static/media/code.6cdb10857eb4d8bc2e9c.jpg",
+    "static/media/bodyshot.jpg": "/portfolio/static/media/bodyshot.e92000b310156c8f1c98.jpg",
+    "static/media/web.svg": "/portfolio/static/media/web.a2a8832e2cdaae638988d94e1cd80370.svg",
+    "static/media/reactl.svg": "/portfolio/static/media/reactl.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/work.svg": "/portfolio/static/media/work.7a91c2cd9b32bbb4ad085520573770ce.svg",
+    "static/media/python.svg": "/portfolio/static/media/python.42f87cb3c004a68af35276b967671a1c.svg",
+    "static/media/github.svg": "/portfolio/static/media/github.5feb8fb4717246e8370f18953b732f84.svg",
+    "static/media/school.svg": "/portfolio/static/media/school.a334bef452aedbf511cb434869bea174.svg",
+    "index.html": "/portfolio/index.html",
+    "static/media/linkedin.svg": "/portfolio/static/media/linkedin.9fe5a28f8dd1ee9af94955ba7340b21c.svg",
+    "static/media/instagram.svg": "/portfolio/static/media/instagram.e9b4e377439621245e36e3e5412b7407.svg",
+    "static/media/menu.svg": "/portfolio/static/media/menu.ee14633945582279fd1cb6f965545b19.svg",
+    "static/media/tailwind.svg": "/portfolio/static/media/tailwind.d22b29a2028c438a02033f41d11e899b.svg",
+    "static/media/menu-close.svg": "/portfolio/static/media/menu-close.e693e48629a56bef8f1709971371fb88.svg",
+    "static/media/facebook.svg": "/portfolio/static/media/facebook.864a9736235814e7c09734ac7533cb20.svg",
+    "main.7c0d66f0.css.map": "/portfolio/static/css/main.7c0d66f0.css.map",
+    "main.37102f21.js.map": "/portfolio/static/js/main.37102f21.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7c0d66f0.css",
+    "static/js/main.37102f21.js"
+  ]
+}
