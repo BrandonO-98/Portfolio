@@ -7,7 +7,7 @@ export default function Cards({ cardData }) {
   return (
     <div className="grid mt-4 items-center justify-items-center md:grid-cols-2 md:w-[700px] lg:max-w-[900px] lg:w-[900px]">
       {cardData.map((item) => (
-        <Card data={item} />
+        <Card data={item} key={item.id} />
       ))}
     </div>
   );
@@ -16,17 +16,18 @@ export default function Cards({ cardData }) {
 Cards.defaultProps = {
   cardData: [
     {
-      vid: 'MemeGen.mp4',
-      header: 'Meme Generator',
-      desc: `On page render a set of images are fetched from an API. Clicking the button 
-      renders a random image from the fetched set. Meme top and bottom text are accessible to the user.`,
-      tech: 'React, HTML/CSS',
-      linkLabel: 'Meme Generator App',
-      linkPath: 'https://leafy-kleicha-5ef554.netlify.app',
+      id: 1,
+      vid: 'amazingwords.mov',
+      header: 'Amazing Words - The Bible Made Simple',
+      desc: 'Fully functional ecommerce site featuring bible scripts, workbooks and more.',
+      tech: 'Shopify, Klayvio, Recharge, loox, fireflare',
+      linkLabel: 'Amazing Words Store',
+      linkPath: 'https://www.amazingwords.com/',
       docLabel: 'Build Docs',
       docPath: 'https://docs.google.com/document/d/1roaeQUtpA5UeB5AHVdRUiGeCQD6tLdmzMKE9Um14i0Q/edit?usp=sharing',
     },
     {
+      id: 2,
       vid: 'Notes.mp4',
       header: 'Reminder - Note taking App',
       desc: `This web app built in ES6 JS allows the user to create, update and delete notes.
@@ -38,6 +39,7 @@ Cards.defaultProps = {
       docPath: 'https://docs.google.com/document/d/1roaeQUtpA5UeB5AHVdRUiGeCQD6tLdmzMKE9Um14i0Q/edit?usp=sharing',
     },
     {
+      id: 3,
       vid: 'Restau.mp4',
       header: 'Foodie - Restaurant Advisor',
       desc: `On map change, a set of restaurants is fetched from an API. Restaurant information 
@@ -49,6 +51,7 @@ Cards.defaultProps = {
       docPath: 'https://docs.google.com/document/d/1roaeQUtpA5UeB5AHVdRUiGeCQD6tLdmzMKE9Um14i0Q/edit?usp=sharing',
     },
     {
+      id: 4,
       vid: 'Campr.mov',
       header: 'CAMPR - Campground Review Site',
       desc: `Review campgrounds around the globe. You must be registered for full access. Mapbox enables rendering of 
