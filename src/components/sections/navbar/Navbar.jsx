@@ -24,14 +24,20 @@ export default function Navbar({
           {/* logo-container */}
           <button
             type="button"
-            onClick={() => scrollToSection(sections[0])}
+            onClick={() => {
+              scrollToSection(sections[0]);
+              handleClick();
+            }}
           >
             <Developer className="w-8 h-8 fill-black" />
           </button>
           <h1 className="text-black pl-4 font-bold drop-shadow-xl">
             <button
               type="button"
-              onClick={() => scrollToSection(sections[0])}
+              onClick={() => {
+                scrollToSection(sections[0]);
+                handleClick();
+              }}
               className="text-md md:text-lg lg:text-xl"
             >
               {logo.brand}
@@ -42,8 +48,8 @@ export default function Navbar({
             Web Developer
           </h2>
         </div>
-        <ul className={click ? 'bg-white absolute h-96 w-full -left-0 top-20 grid grid-rows-5 ease-in duration-500 lg:mr-32 lg:grid-rows-none lg:grid-cols-5 lg:static lg:h-20'
-          : 'bg-white absolute h-96 w-full -left-full top-20 grid grid-rows-5 ease-in duration-500 lg:grid-rows-none lg:grid-cols-5 lg:static lg:h-full'}
+        <ul className={click ? 'bg-white absolute h-96 w-full -left-0 top-20 grid grid-rows-5 ease-in duration-500 lg:grid-rows-none lg:grid-cols-5 lg:static lg:h-20'
+          : 'bg-white absolute h-96 w-full -left-full top-20 grid grid-rows-5 ease-in duration-500 lg:grid-rows-none lg:grid-cols-5 lg:static lg:h-20'}
         >
           {links.map((link, index) => (
             <li
@@ -53,7 +59,10 @@ export default function Navbar({
             >
               <button
                 type="button"
-                onClick={() => scrollToSection(sections[index])}
+                onClick={() => {
+                  scrollToSection(sections[index]);
+                  handleClick();
+                }}
                 className={index === (links.length - 1)
                   ? 'grid w-80 h-10 bg-white text-black items-center justify-items-center border-2 border-white rounded-3xl lg:w-full hover:text-white hover:font-bold hover:bg-green-500 ease-in duration-300'
                   : 'grid text-black h-full items-center justify-items-center ease-in duration-100 hover:text-green-400 hover:border-b-4 hover:border-green-500  hover:font-bold lg:h-full'}

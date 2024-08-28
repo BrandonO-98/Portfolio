@@ -15,13 +15,14 @@ export default function Timeline({ resume }) {
       <SectionHeader header="Resume" />
       <div className="grid justify-self-center w-3/6 mt-12">
         <a
-          target="_blanck"
-          href="/Resume_Developer.pdf"
-          download="Resume_Developer.pdf"
+          // target="_blanck"
+          // href="/Resume_Developer.pdf"
+          // download="Resume_Developer.pdf"
+          href="https://docs.google.com/document/d/14Myx72Vp5I4nvxLh5xINxZGp5VteWv1JUMwsSz44eLA/edit?usp=sharing"
           className="justify-self-center ease-in duration-300 border border-green-500 bg-green-500 text-white px-8 py-2 mb-2 rounded-full font-bold xl:justify-self-end
                   hover:text-black hover:bg-white"
         >
-          Download Resume PDF
+          View Resume
         </a>
 
       </div>

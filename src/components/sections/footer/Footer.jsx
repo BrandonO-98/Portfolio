@@ -34,7 +34,7 @@ export default function Footer({ logo, socials }) {
 
         </div>
         <p className="hidden text-white lg:grid">Copyright © 2022 Brandon Oscar Shew</p>
-        <ul className="w-full h-full grid grid-cols-4 items-center justify-items-center px-4 max-w-xs lg:px-8">
+        <ul className="w-full h-full grid grid-cols-4 items-center justify-items-center sm:px-4 max-w-xs lg:px-8">
           {socials.map((social, index) => (
             <li className="grid items-center justify-items-center w-full h-full">
               <a

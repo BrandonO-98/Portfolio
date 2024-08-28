@@ -7,7 +7,7 @@ export default function Card({
 }) {
   return (
     <div className="grid justify-items-center bg-white h-96 w-80 shadow-2xl rounded-2xl overflow-hidden my-8
-    ease-in duration-100 hover:-translate-x-2 hover:-translate-y-2 sm:w-96 md:w-80 lg:w-96"
+    ease-in duration-100 md:hover:-translate-x-2 md:hover:-translate-y-2 sm:w-96 md:w-80 lg:w-96"
     >
       <video
         src={data.vid}
