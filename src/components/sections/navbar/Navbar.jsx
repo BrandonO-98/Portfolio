@@ -72,13 +72,14 @@ export default function Navbar({
             </li>
           ))}
         </ul>
-        <button
-          type="button"
-          className="grid bg-white h-full w-full items-center justify-end mr-16 md:mr-24 lg:hidden"
-          onClick={handleClick}
-        >
-          {click ? <Cross className="w-full h-15 stroke-black" /> : <Burger className="w-full h-15 stroke-black" />}
-        </button>
+        <div className="grid bg-white h-full w-full items-center justify-end mr-16 md:mr-24 lg:hidden">
+          <button
+            type="button"
+            onClick={handleClick}
+          >
+            {click ? <Cross className="w-full h-15 stroke-black" /> : <Burger className="w-full h-15 stroke-black" />}
+          </button>
+        </div>
       </div>
     </nav>
   );

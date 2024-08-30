@@ -1,6 +1,6 @@
 /* eslint-disable max-len */
 /* eslint-disable no-unused-vars */
-import React from 'react';
+import React, { useState, useLayoutEffect } from 'react';
 import PropTypes from 'prop-types';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
@@ -10,6 +10,24 @@ import SectionHeader from 'components/elements/SectionHeader';
 import timelineData from './TimelineData';
 
 export default function Timeline({ resume }) {
+  // track window size
+  const [windowSize, setWindowSize] = useState({ width: 0, height: 0 });
+
+  const handleSize = () => {
+    setWindowSize({
+      width: window.innerWidth,
+      height: window.innerHeight,
+    });
+  };
+
+  useLayoutEffect(() => {
+    handleSize();
+
+    window.addEventListener('resize', handleSize);
+
+    return () => window.removeEventListener('resize', handleSize);
+  }, []);
+
   return (
     <div ref={resume} className="grid w-full items-center mb-12">
       <SectionHeader header="Resume" />
@@ -26,7 +44,7 @@ export default function Timeline({ resume }) {
         </a>
 
       </div>
-      <VerticalTimeline lineColor="black">
+      <VerticalTimeline lineColor="black" animate={true ? windowSize.width > 1024 : false}>
         {timelineData.map((timelineEvent) => (
           <VerticalTimelineElement
             key={timelineEvent.id}

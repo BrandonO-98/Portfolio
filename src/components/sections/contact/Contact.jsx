@@ -36,8 +36,7 @@ export default function Contact({ contact }) {
       }),
     })
       .then((response) => response.json())
-      .then((data) => console.log(data))
-      .catch((error) => console.log(error));
+      .catch((error) => console.log('Error', error));
 
     setFormData({
       name: '',

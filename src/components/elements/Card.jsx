@@ -17,9 +17,9 @@ export default function Card({
         type="video/mp4"
         className="w-full"
       />
-      <h2 className="justify-self-start font-bold text-md px-4 pt-2 pb-0">{data.header}</h2>
-      <p className=" text-sm px-4">{data.desc}</p>
-      <p className=" text-xs px-4">{data.tech}</p>
+      <h2 className="font-bold text-md px-4 pt-2 pb-0 text-center">{data.header}</h2>
+      <p className=" text-sm px-4 text-left">{data.desc}</p>
+      <p className=" text-xs px-4 text-center">{data.tech}</p>
       <div className="">
         <a
           href={data.linkPath}
