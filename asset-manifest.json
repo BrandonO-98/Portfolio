@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.a0243da5.css",
-    "main.js": "/portfolio/static/js/main.da69e97d.js",
+    "main.css": "/portfolio/static/css/main.6fe6a53b.css",
+    "main.js": "/portfolio/static/js/main.fc5a853b.js",
     "static/media/water.jpg": "/portfolio/static/media/water.191a34b34406decb1524.jpg",
     "static/media/formal2.jpg": "/portfolio/static/media/formal2.62adfe37e161ac38ceb4.jpg",
     "static/media/code.jpg": "/portfolio/static/media/code.6cdb10857eb4d8bc2e9c.jpg",
@@ -19,11 +19,11 @@
     "static/media/tailwind.svg": "/portfolio/static/media/tailwind.d22b29a2028c438a02033f41d11e899b.svg",
     "static/media/menu-close.svg": "/portfolio/static/media/menu-close.e693e48629a56bef8f1709971371fb88.svg",
     "static/media/facebook.svg": "/portfolio/static/media/facebook.864a9736235814e7c09734ac7533cb20.svg",
-    "main.a0243da5.css.map": "/portfolio/static/css/main.a0243da5.css.map",
-    "main.da69e97d.js.map": "/portfolio/static/js/main.da69e97d.js.map"
+    "main.6fe6a53b.css.map": "/portfolio/static/css/main.6fe6a53b.css.map",
+    "main.fc5a853b.js.map": "/portfolio/static/js/main.fc5a853b.js.map"
   },
   "entrypoints": [
-    "static/css/main.a0243da5.css",
-    "static/js/main.da69e97d.js"
+    "static/css/main.6fe6a53b.css",
+    "static/js/main.fc5a853b.js"
   ]
 }
