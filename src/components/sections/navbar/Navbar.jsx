@@ -48,8 +48,8 @@ export default function Navbar({
             Web Developer
           </h2>
         </div>
-        <ul className={click ? 'bg-white absolute h-96 w-full -left-0 top-20 grid grid-rows-5 ease-in duration-500 lg:grid-rows-none lg:grid-cols-5 lg:static lg:h-20'
-          : 'bg-white absolute h-96 w-full -left-full top-20 grid grid-rows-5 ease-in duration-500 lg:grid-rows-none lg:grid-cols-5 lg:static lg:h-20'}
+        <ul className={click ? 'bg-white absolute h-96 w-full -left-0 top-20 grid grid-rows-5 duration-150 lg:grid-rows-none lg:grid-cols-5 lg:static lg:h-20'
+          : 'bg-white absolute h-96 w-full -left-full top-20 grid grid-rows-5  duration-500 lg:grid-rows-none lg:grid-cols-5 lg:static lg:h-20'}
         >
           {links.map((link, index) => (
             <li
