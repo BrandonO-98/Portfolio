@@ -34,7 +34,7 @@ const timelineData = [
     title: 'Teaching Assistant',
     location: 'University of Toronto',
     desc: [`Crafted appropriate lessons and assessments to guide and gauge the learning of 
-      undergraduate physics students.`],
+      undergraduate physics students`],
     buttonTxt: '',
     buttonLink: '',
     date: 'September 2019 - April 2022',
@@ -54,9 +54,9 @@ const timelineData = [
     id: 5,
     title: 'Computational Physics Researcher ',
     location: 'University of Toronto',
-    desc: ['Developed particle tracking and change-point detection algorithm via MATLAB.',
+    desc: ['Developed particle tracking and change-point detection algorithm via MATLAB',
       `Processed big data sets using Python to determine macro-molecule conformational
-      space, dynamics and observables.`],
+      space, dynamics and observables`],
     buttonTxt: 'Publication',
     buttonLink: 'https://pubmed.ncbi.nlm.nih.gov/31941327',
     date: 'May 2019 - September 2010',
@@ -79,7 +79,7 @@ const timelineData = [
     title: 'Medical Physics Intern',
     location: 'Credit Valley hospital',
     desc: [`Architectured databases via MS Access VBA to track radiology and 
-      radiography equipment status.`],
+      radiography equipment status`],
     buttonTxt: '',
     buttonLink: '',
     date: 'September 2019 - April 2020',
