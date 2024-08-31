@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import SectionHeader from 'components/elements/SectionHeader';
-import { ReactComponent as Loader } from 'assets/icons/loader.svg';
+import { ReactComponent as Loader } from 'assets/icons/loader2.svg';
 
 export default function Contact({ contact }) {
   const [formData, setFormData] = useState({
@@ -106,10 +106,10 @@ export default function Contact({ contact }) {
               Send Message
 
             </button>
-            {isAwaitingResponse && (
+            {true && (
               <Loader />
             )}
-            {isSubmitSuccessful && <div className="text-red-400">* Message has been sent!</div>}
+            {isSubmitSuccessful && <div className="text-blue-400">* Message has been sent!</div>}
             {isSubmitFailure && <div className="text-red-400">* Error, please refresh page and try again!</div>}
           </form>
         </div>
