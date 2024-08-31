@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable import/no-absolute-path */
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { ReactComponent as Burger } from 'assets/icons/menu.svg';
 import { Link, Media } from 'lib/Proptypes';
@@ -8,11 +8,18 @@ import { ReactComponent as Cross } from 'assets/icons/menu-close.svg';
 import { ReactComponent as Developer } from 'assets/icons/web.svg';
 // 3 props {img, array of objs, }
 export default function Navbar({
-  links, logo, scrollToSection, home, about, resume, projects, contact,
+  links, logo, scrollToSection, scrolled, setScrolled, home, about, resume, projects, contact,
 }) {
   const sections = [home, about, resume, projects, contact];
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
+
+  useEffect(() => {
+    if (scrolled) {
+      setClick(false);
+      setScrolled(false);
+    }
+  }, [scrolled]);
 
   return (
     // should this be width of screen or full

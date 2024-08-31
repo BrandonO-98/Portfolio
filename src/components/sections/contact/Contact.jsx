@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import SectionHeader from 'components/elements/SectionHeader';
+import { ReactComponent as Loader } from 'assets/icons/loader.svg';
 
 export default function Contact({ contact }) {
   const [formData, setFormData] = useState({
@@ -9,7 +10,9 @@ export default function Contact({ contact }) {
     email: '',
     message: '',
   });
-  const [isSubmited, setIsSubmitted] = useState(false);
+  const [isSubmitSuccessful, setIsSubmitSuccessful] = useState(false);
+  const [isSubmitFailure, setIsSubmitFailure] = useState(false);
+  const [isAwaitingResponse, setIsAwaitingResponse] = useState(false);
 
   function handleChange(e) {
     const {
@@ -22,6 +25,9 @@ export default function Contact({ contact }) {
   }
 
   function handleSubmit(e) {
+    setIsAwaitingResponse(true);
+    setIsSubmitSuccessful(false);
+    setIsSubmitFailure(false);
     e.preventDefault();
     fetch('https://formsubmit.co/ajax/352723cdbb03dcb368a35da1a0cb0e3e', {
       method: 'POST',
@@ -35,15 +41,22 @@ export default function Contact({ contact }) {
         email: formData.email,
       }),
     })
-      .then((response) => response.json())
-      .catch((error) => console.log('Error', error));
+      .then((response) => {
+        response.json();
+        setIsSubmitSuccessful(true);
+        setIsAwaitingResponse(false);
+      })
+      .catch((error) => {
+        console.log('Error', error);
+        setIsSubmitFailure(true);
+        setIsAwaitingResponse(false);
+      });
 
     setFormData({
       name: '',
       email: '',
       message: '',
     });
-    setIsSubmitted(true);
   }
   const inputClassName = 'h-12 w-full rounded-md bg-green-100 my-3 indent-5';
   return (
@@ -87,13 +100,17 @@ export default function Contact({ contact }) {
             />
             <button
               type="submit"
-              className="rounded-full p-4 text-black ease-in duration-200 text-center border border-green-500 font-bold
+              className="mb-4 rounded-full p-4 text-black ease-in duration-200 text-center border border-green-500 font-bold
               hover:text-black hover:bg-green-500 hover:text-white"
             >
               Send Message
 
             </button>
-            {isSubmited && <div className="text-red-400 pt-4">* Message has been sent!</div>}
+            {isAwaitingResponse && (
+              <Loader />
+            )}
+            {isSubmitSuccessful && <div className="text-red-400">* Message has been sent!</div>}
+            {isSubmitFailure && <div className="text-red-400">* Error, please refresh page and try again!</div>}
           </form>
         </div>
       </div>

@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import React, { useRef } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import About from 'components/sections/about/About';
 import Timeline from 'components/sections/timeline/Timeline';
 import Projects from 'components/sections/projects/Projects';
@@ -21,10 +21,25 @@ function App() {
       behavior: 'smooth',
     });
   };
+
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(true);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <div className="grid overflow-hidden">
       <Navbar
         scrollToSection={scrollToSection}
+        scrolled={scrolled}
+        setScrolled={setScrolled}
         home={home}
         about={about}
         resume={resume}
