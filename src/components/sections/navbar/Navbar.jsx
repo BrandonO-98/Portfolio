@@ -16,7 +16,7 @@ export default function Navbar({
 
   return (
     // should this be width of screen or full
-    <nav className="grid w-full max-w-full justify-items-center h-24 bg-white sticky top-0 drop-shadow-lg z-[1]">
+    <nav className="grid w-full max-w-full justify-items-center h-24 bg-white fixed drop-shadow-lg z-[1]">
       {/* navbar */}
       <div className="relative grid grid-cols-2 h-full w-full justify-items-center items-center lg:max-w-6xl">
         {/* navbar-container */}
@@ -48,8 +48,8 @@ export default function Navbar({
             Web Developer
           </h2>
         </div>
-        <ul className={click ? 'opacity-100 bg-white absolute h-56 w-full top-20 grid grid-rows-5 duration-300 lg:grid-rows-none lg:grid-cols-5 lg:static lg:h-20'
-          : 'translate-x-full bg-white absolute h-0 w-full top-20 grid grid-rows-5 duration-200 lg:translate-x-0 lg:grid-rows-none lg:grid-cols-5 lg:static lg:h-20'}
+        <ul className={click ? 'rounded-bl-[64px] rounded-br-[64px] bg-white absolute h-56 w-full top-20 grid grid-rows-5 duration-300 lg:grid-rows-none lg:grid-cols-5 lg:static lg:h-20'
+          : 'rounded-bl-[64px] rounded-br-[64px] translate-x-full bg-white absolute h-56 w-full top-20 grid grid-rows-5 duration-200 lg:translate-x-0 lg:grid-rows-none lg:grid-cols-5 lg:static lg:h-20'}
         >
           {links.map((link, index) => (
             <li
