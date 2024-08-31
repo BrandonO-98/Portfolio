@@ -22,7 +22,7 @@ function App() {
     });
   };
   return (
-    <div className="grid">
+    <div className="grid overflow-hidden">
       <Navbar
         scrollToSection={scrollToSection}
         home={home}

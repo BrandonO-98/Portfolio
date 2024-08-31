@@ -49,7 +49,7 @@ export default function Navbar({
           </h2>
         </div>
         <ul className={click ? 'opacity-100 bg-white absolute h-56 w-full top-20 grid grid-rows-5 duration-300 lg:grid-rows-none lg:grid-cols-5 lg:static lg:h-20'
-          : 'opacity-0 bg-white absolute h-56 w-full  top-20 grid grid-rows-5 duration-300 lg:translate-x-0 lg:grid-rows-none lg:grid-cols-5 lg:static lg:h-20'}
+          : 'translate-x-full bg-white absolute h-0 w-full top-20 grid grid-rows-5 duration-200 lg:translate-x-0 lg:grid-rows-none lg:grid-cols-5 lg:static lg:h-20'}
         >
           {links.map((link, index) => (
             <li
