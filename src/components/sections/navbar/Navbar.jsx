@@ -48,14 +48,14 @@ export default function Navbar({
             Web Developer
           </h2>
         </div>
-        <ul className={click ? 'bg-white absolute h-96 w-full translate-x-0 top-20 grid grid-rows-5 duration-150 lg:grid-rows-none lg:grid-cols-5 lg:static lg:h-20'
-          : 'bg-white absolute h-96 w-full translate-x-full top-20 grid grid-rows-5  duration-150 lg:grid-rows-none lg:grid-cols-5 lg:static lg:h-20'}
+        <ul className={click ? 'bg-white absolute h-56 w-full translate-x-0 top-20 grid grid-rows-5 duration-150 lg:grid-rows-none lg:grid-cols-5 lg:static lg:h-20'
+          : 'bg-white absolute h-56 w-full translate-x-full top-20 grid grid-rows-5 duration-150 lg:translate-x-0 lg:grid-rows-none lg:grid-cols-5 lg:static lg:h-20'}
         >
           {links.map((link, index) => (
             <li
               key={link.label}
               className={index === (links.length - 1) ? 'grid h-full self-center items-center justify-items-center'
-                : 'grid h-full'}
+                : 'grid h-full items-center'}
             >
               <button
                 type="button"
@@ -65,7 +65,7 @@ export default function Navbar({
                 }}
                 className={index === (links.length - 1)
                   ? 'grid w-80 h-10 bg-white text-black items-center justify-items-center border-2 border-white rounded-3xl lg:w-full hover:text-white hover:font-bold hover:bg-green-500 ease-in duration-300'
-                  : 'grid text-black h-full items-center justify-items-center ease-in duration-100 hover:text-green-400 hover:border-b-4 hover:border-green-500  hover:font-bold lg:h-full'}
+                  : 'grid text-black h-full items-center justify-items-center ease-in duration-100 hover:text-green-400 hover:border-b-4 hover:border-green-500  hover:font-bold'}
               >
                 {link.label}
               </button>
